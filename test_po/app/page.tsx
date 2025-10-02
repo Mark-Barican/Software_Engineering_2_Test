@@ -32,7 +32,8 @@ export default function Home() {
     "Guten Tag! 🇩🇪",
     "Ciao! 🇮🇹",
     "Olá! 🇧🇷",
-    "Привет! 🇷🇺"
+    "Привет! 🇷🇺",
+    "Hello, World Pat here!"
   ];
 
   const [currentGreeting, setCurrentGreeting] = useState(0);
