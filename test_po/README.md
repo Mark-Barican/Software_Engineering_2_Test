@@ -28,10 +28,10 @@ A beautiful, interactive "Hello World" application built with Next.js 15, TypeSc
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
-- npm or yarn package manager
+- Node.js 18.17.0+ 
+- npm 8.0.0+ or yarn package manager
 
-### Installation
+### Local Development
 
 1. **Clone the repository**
    ```bash
@@ -52,13 +52,36 @@ A beautiful, interactive "Hello World" application built with Next.js 15, TypeSc
 4. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)
 
+### 🌐 Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/test_po)
+
+**One-Click Deployment:**
+1. Click the "Deploy with Vercel" button above
+2. Connect your GitHub account
+3. Vercel automatically detects Next.js and deploys
+4. Get your live URL in seconds!
+
+**Manual Deployment:**
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy to Vercel
+vercel
+
+# Deploy to production
+vercel --prod
+```
+
 ## 🛠️ Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **Runtime**: React 18 with Client Components
-- **Build Tool**: Turbopack (Next.js built-in)
+- **Runtime**: React 19 with Client Components
+- **Deployment**: Vercel (Optimized)
+- **Build Tool**: Next.js built-in compiler
 
 ## 📁 Project Structure
 
@@ -118,8 +141,9 @@ npm run build        # Build production application
 npm run start        # Start production server
 npm run lint         # Run ESLint for code quality
 
-# Type Checking
+# Type Checking & Deployment
 npm run type-check   # Run TypeScript compiler check
+npm run vercel-build # Custom build command for Vercel
 ```
 
 ## 🌐 Browser Support
