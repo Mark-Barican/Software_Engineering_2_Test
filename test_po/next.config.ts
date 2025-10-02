@@ -16,6 +16,9 @@ const nextConfig: NextConfig = {
   // Enable compression
   compress: true,
   
+  // Optimize routing for Vercel
+  trailingSlash: false,
+  
   // Security headers
   async headers() {
     return [
@@ -43,8 +46,27 @@ const nextConfig: NextConfig = {
     ];
   },
   
+  // Redirects for common routes
+  async redirects() {
+    return [
+      {
+        source: '/home',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/index',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
+  
   // Vercel-specific optimizations
   outputFileTracingRoot: __dirname,
+  
+  // Optimize for Vercel deployment
+  poweredByHeader: false,
 };
 
 export default nextConfig;
