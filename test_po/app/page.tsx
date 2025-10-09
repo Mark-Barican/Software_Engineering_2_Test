@@ -33,6 +33,11 @@ export default function Home() {
     "Ciao! 🇮🇹",
     "Olá! 🇧🇷",
     "Привет! 🇷🇺",
+    "Tere! 🇪🇪",
+    "Dia dhuit! 🇮🇪",
+    "Ahoj! 🇨🇿",
+    "Hej! 🇩🇰",
+    "Saluton! 🌍",
     "Hello, World Pat here!"
   ];
 
