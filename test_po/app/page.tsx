@@ -26,6 +26,7 @@ export default function Home() {
 
   const greetings = [
     "Hello, World! 👋",
+    "Hello, I am the goat! 👋",
     "Bonjour! 🇫🇷",
     "Hola! 🇪🇸", 
     "こんにちは! 🇯🇵",
